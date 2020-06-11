@@ -21,6 +21,8 @@ If you have any questions, feel free to leave an Issue on this GitHub repository
 - [3. Creating a Repo from an Existing Project](#3-creating-a-repo-from-an-existing-project)
 - [4. Clone a Git Repository](#4-clone-a-git-repository)
 - [5. Working with EGit](#5-working-with-egit)
+  - [Summary](#summary)
+- [Related links](#related-links)
 
 ## 1. Installing the EGit Plug-in
 Before we can interact with Git we need to install a plug-in into our z/OS Explorer environment.  This can be done with just a few clicks using the 'Install New Software' feature.
@@ -69,7 +71,7 @@ Now that our plug-in is installed, let's create a repository we can work with.  
 - **2.8.1** Right click the repository you wish to delete. Then select **"Delete Repository..."** in the drop down. A pop-up will appear with two checkboxes. If the first checkbox is checked it will delete the Git repository but not the actual project files. If both check boxes are checked it will delete the Git repository and the project files. Once you have selected the options to like, click **"Delete"**. The repository should now be deleted and removed from the list.
 
 ## 3. Creating a Repo from an Existing Project
-Instead of starting with an empty repostiory, you might want to start a repository based on a project you already have in z/OS Explorer.  Follow these steps to do so:
+Instead of starting with an empty repository, you might want to start a repository based on a project you already have in z/OS Explorer.  Follow these steps to do so:
 
 **3.0** **Set Up:** Creating a Project Example.
 
@@ -184,7 +186,7 @@ Working with Git repositories means understanding how code is organized.  Let's 
 **5.30** Here we can see that our new line is added to the file on the **master** branch, so we have successfully incorporated our changes from our **development** branch into the **master** branch. <br/>![Confirm Change](images/5.30-ConfirmChange.png)
 
 ### Summary
-This marks the end of this tutorial. Hopefully you've enjoyed installing and configuring the eGit plug-in to allow easy interaction between z/OS Explorer and Git.  You're now ready to use Git for all the source for your applications running on z/OS.  Go ahead and try to use it with your fist "real" project.
+Congrats of finishing this tutorial. Hopefully you've enjoyed installing and learning how to use the eGit plug-in to allow easy interaction between z/OS Explorer and Git. If you want to start using Git in your organization, but aren't sure how to get started or what the migration process looks like, please contact Ronald Geraghty at ronald.geraghty@ibm.com to set up a virtual session. We can discuss topics like "How to do parallel development using Git, and what a Mainframe DevOps pipeline looks like with Git. 
 
 ## Related links
 - [IBM z/OS Explorer overview page](https://developer.ibm.com/mainframe/products/zosexplorer/)
