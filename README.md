@@ -1,32 +1,38 @@
 # EGit Installation for IBM Explorer for z/OS <!-- omit in toc -->
 
 ### Introduction
+
 This tutorial walks through the process of installing the EGit plug-in to IBM Explorer for z/OS (z/OS Explorer). It then shows how to work with the plug-in to perform some standard tasks related to source code management with Git such as creating a new Git repository, adding an existing Git repository, cloning a Git repository from a remote host, and committing and pushing to a Git repository.
 
 This work is being done as part of a series of code patterns and tutorials centered on bringing DevOps practices to z/OS Connect projects.
 
 ### Prerequisites:
+
 - IBM Explorer for z/OS must be installed. If it is not installed please reference this guide on doing so: [Installing IBM Explorer for z/OS Aqua](https://www.ibm.com/support/knowledgecenter/en/SSBDYH_3.2/com.ibm.zexpl.install.client.doc/topics/install20.html)
 - Basic knowledge of Git.
 
 ### Estimated time
+
 It should take approximately 30 minutes to complete this tutorial.
 
 ### Questions
+
 If you have any questions, feel free to leave an Issue on this GitHub repository.
 
 ### Steps: <!-- omit in toc -->
+
 - [1. Installing the EGit Plug-in](#1-installing-the-egit-plug-in)
 - [2. Creating a Git Repo with EGit](#2-creating-a-git-repo-with-egit)
 - [3. Creating a Repo from an Existing Project](#3-creating-a-repo-from-an-existing-project)
 - [4. Clone a Git Repository](#4-clone-a-git-repository)
 - [5. Working with EGit](#5-working-with-egit)
-  - [Summary](#summary)
+- [Summary](#summary)
 - [Related links](#related-links)
 - [Authors](#authors)
 
 ## 1. Installing the EGit Plug-in
-Before we can interact with Git we need to install a plug-in into our z/OS Explorer environment.  This can be done with just a few clicks using the 'Install New Software' feature.
+
+Before we can interact with Git we need to install a plug-in into our z/OS Explorer environment. This can be done with just a few clicks using the 'Install New Software' feature.
 
 **1.1** Open IBM Explorer for z/OS. You should see an Eclipse application that looks something like this:<br/>![Open IBM Explorer for z/OS](images/1.1-OpenZOSExplorer.png)
 
@@ -36,7 +42,7 @@ Before we can interact with Git we need to install a plug-in into our z/OS Explo
 
 **1.4** Type **"eGit"** for **Name** and "http://download.eclipse.org/egit/updates" for **Location**. Then click **OK**.<br/>![eGit Location](images/1.4-EgitLink.png)
 
-**1.5** Click the check box next to **Git integration for Eclipse**. Then below, click the check box next to **Show only software applicable to target environment**.  All the other checkboxes in the bottom section should have been checked by default. Then click **Next**. <br/>![Check Boxes](images/1.5-CheckBoxs.png)
+**1.5** Click the check box next to **Git integration for Eclipse**. Then below, click the check box next to **Show only software applicable to target environment**. All the other checkboxes in the bottom section should have been checked by default. Then click **Next**. <br/>![Check Boxes](images/1.5-CheckBoxs.png)
 
 **1.6** Click the **Next** Button. <br/>![Install Remediation Page](images/1.6-InstallRemediationPage.png)
 
@@ -49,7 +55,8 @@ Before we can interact with Git we need to install a plug-in into our z/OS Explo
 **1.10** Once the plug-in is finished installing, IBM Explorer for z/OS will need to be restarted before it can be used. Another pop-up window should appear asking you to restart. Click **Yes**. <br/>![Restart Explorer](images/1.10-Restart.png)
 
 ## 2. Creating a Git Repo with EGit
-Now that our plug-in is installed, let's create a repository we can work with.  We'll start by creating a local repository on our PC where z/OS Explorer is running.
+
+Now that our plug-in is installed, let's create a repository we can work with. We'll start by creating a local repository on our PC where z/OS Explorer is running.
 
 **2.1** Re-open IBM Explorer for z/OS if it did not re-open automatically.
 
@@ -72,7 +79,8 @@ Now that our plug-in is installed, let's create a repository we can work with.  
 - **2.8.1** Right click the repository you wish to delete. Then select **"Delete Repository..."** in the drop down. A pop-up will appear with two checkboxes. If the first checkbox is checked it will delete the Git repository but not the actual project files. If both check boxes are checked it will delete the Git repository and the project files. Once you have selected the options to like, click **"Delete"**. The repository should now be deleted and removed from the list.
 
 ## 3. Creating a Repo from an Existing Project
-Instead of starting with an empty repository, you might want to start a repository based on a project you already have in z/OS Explorer.  Follow these steps to do so:
+
+Instead of starting with an empty repository, you might want to start a repository based on a project you already have in z/OS Explorer. Follow these steps to do so:
 
 **3.0** **Set Up:** Creating a Project Example.
 
@@ -96,7 +104,8 @@ Instead of starting with an empty repository, you might want to start a reposito
 **OPTIONAL 3.8** Now that we are done creating a repository from an existing project, you may repeat step **2.7** or **2.8** if you wish to remove or delete the repository.
 
 ## 4. Clone a Git Repository
-Cloning a repository will **copy** the repository from a hosted remote location, like GitHub, GitLab or Bitbucket. This will give you a copy of not only the source code but also a full copy of the history of the source code that has been recorded by Git._
+
+Cloning a repository will **copy** the repository from a hosted remote location, like GitHub, GitLab or Bitbucket. This will give you a copy of not only the source code but also a full copy of the history of the source code that has been recorded by Git.\_
 
 **4.0 Set Up:** Create a GitHub account and Fork the repo.
 
@@ -121,7 +130,8 @@ Paste the URI into the **URI** field. As you enter the **URI** the **Host** and 
 **4.6** Do not remove or delete the repository you just cloned. We will be using it in the next section.
 
 ## 5. Working with EGit
-Working with Git repositories means understanding how code is organized.  Let's examine what a branch is in a Git repository, learn how to work with different branches, and why we would want to do so.
+
+Working with Git repositories means understanding how code is organized. Let's examine what a branch is in a Git repository, learn how to work with different branches, and why we would want to do so.
 
 **5.0** Now that we have walked through the different ways of starting your Git project we will discuss how to work with your Git repository. For this section it would be best if you used the repository you forked and then cloned down in the previous steps.
 
@@ -186,16 +196,19 @@ Working with Git repositories means understanding how code is organized.  Let's 
 
 **5.30** Here we can see that our new line is added to the file on the **master** branch, so we have successfully incorporated our changes from our **development** branch into the **master** branch. <br/>![Confirm Change](images/5.30-ConfirmChange.png)
 
-### Summary
-Congrats of finishing this tutorial. Hopefully you've enjoyed installing and learning how to use the eGit plug-in to allow easy interaction between z/OS Explorer and Git. If you want to start using Git in your organization, but aren't sure how to get started or what the migration process looks like, please contact Ronald Geraghty at ronald.geraghty@ibm.com to set up a virtual session. We can discuss topics like "How to do parallel development using Git, and what a Mainframe DevOps pipeline looks like with Git. 
+## Summary
+
+Congrats of finishing this tutorial. Hopefully you've enjoyed installing and learning how to use the eGit plug-in to allow easy interaction between z/OS Explorer and Git. If you want to start using Git in your organization, but aren't sure how to get started or what the migration process looks like, please contact Ronald Geraghty at ronald.geraghty@ibm.com to set up a virtual session. We can discuss topics like "How to do parallel development using Git, and what a Mainframe DevOps pipeline looks like with Git.
 
 ## Related links
+
 - [IBM z/OS Explorer overview page](https://developer.ibm.com/mainframe/products/zosexplorer/)
 - [z/OS Explorer Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSBDYH/welcome.html)
 
-## Authors 
+## Authors
+
 - Kenishia Sapp Callaway: North America z Systems Middleware Technical Specialist
   kenishia@us.ibm.com
 
-- Ronald Geraghty: North America z DevOps Technical Specialist 
+- Ronald Geraghty: North America z DevOps Technical Specialist
   ronald.geraghty@ibm.com
