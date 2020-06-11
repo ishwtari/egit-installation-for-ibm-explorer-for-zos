@@ -23,6 +23,7 @@ If you have any questions, feel free to leave an Issue on this GitHub repository
 - [5. Working with EGit](#5-working-with-egit)
   - [Summary](#summary)
 - [Related links](#related-links)
+- [Authors](#authors)
 
 ## 1. Installing the EGit Plug-in
 Before we can interact with Git we need to install a plug-in into our z/OS Explorer environment.  This can be done with just a few clicks using the 'Install New Software' feature.
@@ -191,3 +192,10 @@ Congrats of finishing this tutorial. Hopefully you've enjoyed installing and lea
 ## Related links
 - [IBM z/OS Explorer overview page](https://developer.ibm.com/mainframe/products/zosexplorer/)
 - [z/OS Explorer Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSBDYH/welcome.html)
+
+## Authors 
+- Kenishia Sapp Callaway: North America z Systems Middleware Technical Specialist
+  kenishia@us.ibm.com
+
+- Ronald Geraghty: North America z DevOps Technical Specialist 
+  ronald.geraghty@ibm.com
